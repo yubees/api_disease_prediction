@@ -1,10 +1,10 @@
 from flask import Blueprint, request,jsonify
-import joblib
 import numpy as np
+import pickle
 
 heart_api = Blueprint('heart_api',__name__)
 
-model = joblib.load("./final_diabetes_model.joblib")
+model = pickle.load( open("diabetes_model.sav", 'rb'))
 
 
 # Register route
