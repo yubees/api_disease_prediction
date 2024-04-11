@@ -4,7 +4,7 @@ import pickle
 
 
 diabetes_api = Blueprint('diabetes_api',__name__)
-model = pickle.load(open("diabetes_model.sav", 'rb'))
+model = pickle.load(open("pickle_model.sav", 'rb'))
 
 
 # Register route
